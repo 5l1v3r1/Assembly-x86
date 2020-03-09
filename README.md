@@ -41,7 +41,9 @@ STD_OUT equ 1 ; Output - Exibe dados ao usuario
                                                                                                                         
   ; Definindo as variaveis                                                                                                               
   msg db 'Hello World', 0xa                                                                                                             
-  msg_len equ $- msg                                                                                                                     
+  msg_len equ $- msg  
+  
+  
   ; Exibindo o conteudo da string                                                                                                         
   mov eax, SYS_WRITE                                                                                                                     
   mov ebx, STD_OUT                                                                                                                     
