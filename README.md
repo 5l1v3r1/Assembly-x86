@@ -52,9 +52,9 @@ STD_OUT equ 1 ; Output - Exibe dados ao usuario
   int 0x80 ; Manda para o kernel as informações                                                                                         
   
   ; Finalizando o programa                                                                                                               
-  mov eax, 1
-  mov ebx, 0
-  int 0x80
+  mov eax, 1                                                                                                               
+  mov ebx, 0                                                                                                               
+  int 0x80                                                                                                               
 
 Example file:  [hello-world.asm](hello-world.asm)
 
