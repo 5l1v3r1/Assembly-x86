@@ -39,17 +39,39 @@ RET_EXIT equ 5
 STD_IN equ 0 ; Input - Recebe dados do usuario                                                                                          
 STD_OUT equ 1 ; Output - Exibe dados ao usuario                                                                                         
 
-; Definindo as variaveis                                                                                                                 
-msg db 'Hello World', 0xa                                                                                                               
-msg_len equ $- msg                                                                                                                     
+section data:
+  ; Definindo as variaveis                                                                                                               
+  msg db 'Hello World', 0xa                                                                                                             
+  msg_len equ $- msg                                                                                                                     
 
-; Exibindo o conteudo da string                                                                                                         
-mov eax, SYS_WRITE                                                                                                                     
-mov ebx, STD_OUT                                                                                                                     
-mov ecx, msg ; Conteudo a ser exibido                                                                                                   
-mov edx, msg_len ; Tamanho da string a ser exibida                                                                                       
-int 0x80 ; Manda para o kernel as informações                                                                                           
+section .text:
+
+
+global _start:
+
+
+_start:
+  ; Exibindo o conteudo da string                                                                                                         
+  mov eax, SYS_WRITE                                                                                                                     
+  mov ebx, STD_OUT                                                                                                                     
+  mov ecx, msg ; Conteudo a ser exibido                                                                                                 
+  mov edx, msg_len ; Tamanho da string a ser exibida                                                                                     
+  int 0x80 ; Manda para o kernel as informações                                                                                         
+  
+  ; Finalizando o programa
+  mov eax, 1
+  mov ebx, 0
+  int 0x80
 
 Example file:  [hello-world.asm](hello-world.asm)
 
-## 
+## Recebendo dados do usuario
+SYS_EXIT equ 1
+SYS_READ equ 3
+SYS_WRITE equ 4
+RET_EXIT equ 5
+STD_IN equ 0
+STD_OUT equ 1
+MAX_IN equ 10
+
+
