@@ -1,4 +1,4 @@
-# Assembly-
+# Assembly-x86
 
 ## Registradores
 ax, bx, cx, dx - Para x86 use "e": eax, ebx, ecx, edx - Para x64 use "r": rax, rbx, rcx, rdx
