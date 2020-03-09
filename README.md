@@ -4,8 +4,8 @@
 ax, bx, cx, dx - Para x86 use "e": eax, ebx, ecx, edx - Para x64 use "r": rax, rbx, rcx, rdx
 
 ## Definindo variaveis
-Ex:
-<NOME_VARIAVEL> equ 1
+Ex:                                                                                                                     
+<NOME_VARIAVEL> equ 1                                                                                                                  
 numero_um equ 1
 
 ## Definindo strings
