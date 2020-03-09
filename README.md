@@ -59,12 +59,12 @@ STD_OUT equ 1 ; Output - Exibe dados ao usuario
 Example file:  [hello-world.asm](hello-world.asm)
 
 ## Recebendo dados do usuario
-SYS_EXIT equ 1
-SYS_READ equ 3
-SYS_WRITE equ 4
-RET_EXIT equ 5
-STD_IN equ 0
-STD_OUT equ 1
-MAX_IN equ 10
+SYS_EXIT equ 1                                                                                                               
+SYS_READ equ 3                                                                                                               
+SYS_WRITE equ 4                                                                                                               
+RET_EXIT equ 5                                                                                                               
+STD_IN equ 0                                                                                                               
+STD_OUT equ 1                                                                                                               
+MAX_IN equ 10                                                                                                               
 
 
