@@ -39,7 +39,7 @@ RET_EXIT equ 5
 STD_IN equ 0 ; Input - Recebe dados do usuario                                                                                          
 STD_OUT equ 1 ; Output - Exibe dados ao usuario                                                                                         
 
-section data:
+section data:                                                                                                                           
   ; Definindo as variaveis                                                                                                               
   msg db 'Hello World', 0xa                                                                                                             
   msg_len equ $- msg                                                                                                                     
