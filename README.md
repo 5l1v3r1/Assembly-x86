@@ -59,12 +59,10 @@ STD_OUT equ 1 ; Output - Exibe dados ao usuario
   
 
 ## Recebendo dados do usuario
-SYS_EXIT equ 1                                                                                                               
-SYS_READ equ 3                                                                                                               
-SYS_WRITE equ 4                                                                                                               
-RET_EXIT equ 5                                                                                                               
-STD_IN equ 0                                                                                                               
-STD_OUT equ 1                                                                                                               
-MAX_IN equ 10                                                                                                               
+### Example file:  [hello-world.asm](hello-world.asm)
+
+Em ``` segment .bss ```, nome resb MAX_IN lê a quantidade de caracteres definidos em "MAX_IN" e salva em "nome".                        
+Para melhor entendimento leia o example file.
+
 
 
