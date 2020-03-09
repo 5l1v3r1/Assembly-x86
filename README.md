@@ -28,12 +28,10 @@ Ex:
 len_string equ $- msg
 
 ## Exibindo conteudo no console
+### Example file:  [hello-world.asm](hello-world.asm)
 Para isso iremos precisar de uma string para exibir e seu tamanho.
 
 Primeiro irei definir algumas variaveis para facilitar o entendimento.
-
-Example file:  [hello-world.asm](hello-world.asm)
-
 
 SYS_EXIT equ 1                                                                                                                          
 SYS_READ equ 3                                                                                                                     
