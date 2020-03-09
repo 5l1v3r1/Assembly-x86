@@ -51,7 +51,7 @@ STD_OUT equ 1 ; Output - Exibe dados ao usuario
   mov edx, msg_len ; Tamanho da string a ser exibida                                                                                     
   int 0x80 ; Manda para o kernel as informações                                                                                         
   
-  ; Finalizando o programa
+  ; Finalizando o programa                                                                                                               
   mov eax, 1
   mov ebx, 0
   int 0x80
