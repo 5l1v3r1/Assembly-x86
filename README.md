@@ -32,6 +32,9 @@ Para isso iremos precisar de uma string para exibir e seu tamanho.
 
 Primeiro irei definir algumas variaveis para facilitar o entendimento.
 
+Example file:  [hello-world.asm](hello-world.asm)
+
+
 SYS_EXIT equ 1                                                                                                                          
 SYS_READ equ 3                                                                                                                     
 SYS_WRITE equ 4                                                                                                                     
@@ -55,8 +58,7 @@ STD_OUT equ 1 ; Output - Exibe dados ao usuario
   mov eax, 1                                                                                                               
   mov ebx, 0                                                                                                               
   int 0x80                                                                                                               
-
-Example file:  [hello-world.asm](hello-world.asm)
+  
 
 ## Recebendo dados do usuario
 SYS_EXIT equ 1                                                                                                               
