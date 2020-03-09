@@ -38,19 +38,10 @@ SYS_WRITE equ 4
 RET_EXIT equ 5                                                                                                                     
 STD_IN equ 0 ; Input - Recebe dados do usuario                                                                                          
 STD_OUT equ 1 ; Output - Exibe dados ao usuario                                                                                         
-
-section data:                                                                                                                           
+                                                                                                                        
   ; Definindo as variaveis                                                                                                               
   msg db 'Hello World', 0xa                                                                                                             
   msg_len equ $- msg                                                                                                                     
-
-section .text:
-
-
-global _start:
-
-
-_start:
   ; Exibindo o conteudo da string                                                                                                         
   mov eax, SYS_WRITE                                                                                                                     
   mov ebx, STD_OUT                                                                                                                     
