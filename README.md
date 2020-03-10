@@ -62,7 +62,9 @@ STD_OUT equ 1 ; Output - Exibe dados ao usuario
 ### Example file:  [hello-world.asm](hello-world.asm)
 
 Em ``` segment .bss ```, nome resb MAX_IN lê a quantidade de caracteres definidos em "MAX_IN" e salva em "nome".                        
-Para melhor entendimento leia o example file.
+``` mov ecx, nome ``` Ao invés de setar a variavel a ser exibida, e setada a variavel a ser salvo o que for recebido.                   
+Para melhor entendimento leia o example file.                                                                                           
+
 
 
 
